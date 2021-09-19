@@ -1,0 +1,19 @@
+{
+  "name": "marclopez",
+  "version": "1.0.0",
+  "description": "Landing page for my own website, works as my portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rhytim/MyWebSite.git"
+  },
+  "author": "Marc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rhytim/MyWebSite/issues"
+  },
+  "homepage": "https://github.com/Rhytim/MyWebSite#readme"
+}
