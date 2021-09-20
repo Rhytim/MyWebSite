@@ -2,6 +2,8 @@ $color-primary: #ffa330;
 $color-primary-light: #ffb75e;
 $color-primary-dark: #ed8f03;
 
+$color-grey-dark: #777;
+
 *,
 *::after,
 *::before {
@@ -19,7 +21,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
 
   box-sizing: border-box; /* borders and paddings are no longer added*/
@@ -160,7 +162,7 @@ body {
 
 .btn--white {
   background-color: white;
-  color: #777;
+  color: $color-grey-dark;
 }
 
 .btn::after {
