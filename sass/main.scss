@@ -42,29 +42,29 @@ body {
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo-box:hover .header__logo {
-  animation: moveInRight 1s ease-out;
-  backface-visibility: hidden;
-}
+  &__logo-box:hover &__logo {
+    animation: moveInRight 1s ease-out;
+    backface-visibility: hidden;
+  }
 
-.header__logo {
-  height: 3.5rem;
-}
+  &__logo {
+    height: 3.5rem;
+  }
 
-.header__text-box {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -73,24 +73,24 @@ body {
 
   backface-visibility: hidden; /* we hide the element behind the animation */
   margin-bottom: 6rem;
-}
 
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
 
-  animation: moveInLeft 1s ease-out;
-}
+    animation: moveInLeft 1s ease-out;
+  }
 
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.8rem;
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.8rem;
 
-  animation: moveInRight 1s ease-out;
+    animation: moveInRight 1s ease-out;
+  }
 }
 
 @keyframes moveInLeft {
@@ -137,59 +137,61 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem; /* top&bot right&left */
-  display: inline-block; /*gets treated as a text*/
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative;
-  font-size: 1.6rem;
-}
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem; /* top&bot right&left */
+    display: inline-block; /*gets treated as a text*/
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+  }
 
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba($color-black, 0.2); /* X Y Blurr */
-}
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2); /* X Y Blurr */
 
-.btn:active {
-  /* click pseudoclass */
-  transform: translateY(
-    -0.1rem
-  ); /* related to the parent element not the hover state*/
-  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2); /* X Y Blurr Color/opacity */
-}
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6); /* simply increases the element */
+      opacity: 0;
+    }
+  }
 
-.btn--white {
-  background-color: $color-white;
-  color: $color-grey-dark;
-}
+  &:active {
+    /* click pseudoclass */
+    transform: translateY(
+      -0.1rem
+    ); /* related to the parent element not the hover state*/
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2); /* X Y Blurr Color/opacity */
+  }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
 
-.btn--white::after {
-  background-color: $color-white;
-}
+    &::after {
+      background-color: $color-white;
+    }
+  }
 
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6); /* simply increases the element */
-  opacity: 0;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
 
-.btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s; /* last value is for delay */
-  animation-fill-mode: backwards; /* styles up to zero percent before the animation starts */
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s; /* last value is for delay */
+    animation-fill-mode: backwards; /* styles up to zero percent before the animation starts */
+  }
 }
