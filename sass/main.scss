@@ -3,6 +3,7 @@ $color-primary-light: #ffb75e;
 $color-primary-dark: #ed8f03;
 
 $color-grey-dark: #777;
+$color-white: #fff;
 
 *,
 *::after,
@@ -66,7 +67,7 @@ body {
 }
 
 .heading-primary {
-  color: white;
+  color: $color-white;
   text-transform: uppercase;
 
   backface-visibility: hidden; /* we hide the element behind the animation */
@@ -161,7 +162,7 @@ body {
 }
 
 .btn--white {
-  background-color: white;
+  background-color: $color-white;
   color: $color-grey-dark;
 }
 
@@ -179,7 +180,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: white;
+  background-color: $color-white;
 }
 
 .btn:hover::after {
