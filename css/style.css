@@ -210,7 +210,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #ffb990, #ff7730); }
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, #ffb75e, #ed8f03); }
       .card__side--back-3 {
@@ -228,7 +228,7 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb990, #ff7730), url(../img/psicoLogo.png); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/psicoLogo.png); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #ffb75e, #ed8f03), url(../img/card2.jpg); }
     .card__picture--3 {
@@ -247,7 +247,7 @@ body {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 144, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(255, 183, 94, 0.85), rgba(237, 143, 3, 0.85)); }
     .card__heading-span--3 {
@@ -329,12 +329,28 @@ body {
       .feature-box__details ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
 .form__input {
   font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: none; }
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #ffa330; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ffa330; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
 
 .row {
   max-width: 114rem;
