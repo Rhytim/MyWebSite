@@ -106,6 +106,12 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-bottom: 8rem; }
+
+.u-margin-top-huge {
+  margin-bottom: 10rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -139,6 +145,12 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--orange {
+  background-color: #ffa330;
+  color: #fff; }
+  .btn--orange::after {
+    background-color: #ffa330; }
 
 .btn::after {
   content: "";
@@ -199,6 +211,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb990, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #ffb75e, #ed8f03); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -208,13 +224,15 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb990, #ff7730), url(../img/psicoLogo.png); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #ffb990, #ff7730), url(../img/card2.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb75e, #ed8f03), url(../img/card2.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #ffb990, #ff7730), url(../img/card3.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/card3.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -224,12 +242,16 @@ body {
     position: absolute;
     top: 12rem;
     right: 2rem;
-    width: 75%; }
+    width: 65%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 144, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 183, 94, 0.85), rgba(237, 143, 3, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details ul {
     list-style: none;
     width: 30%;
@@ -307,6 +329,13 @@ body {
       .feature-box__details ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
 
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -374,5 +403,19 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -9.5rem; }
+
+.section-contact {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #ffb75e, #ed8f03); }
+
+.contact {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, #fff 50%, transparent 50%), url(../img/contact.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem; }
+  .contact__form {
+    width: 50%;
+    padding: 6rem; }

@@ -28,6 +28,14 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-terciary-light, $color-terciary-dark);
+            }
         }
     }
 
@@ -46,15 +54,17 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/psicoLogo.png);
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/card2.jpg);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/card2.jpg);
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/card3.jpg);
+            background-image: linear-gradient(to right bottom, $color-terciary-light, $color-terciary-dark), url(../img/card3.jpg);
         }
     }
 
@@ -67,7 +77,7 @@
         position: absolute;
         top: 12rem;
         right: 2rem;
-        width: 75%;
+        width: 65%;
     }
 
     &__heading-span {
@@ -78,6 +88,18 @@
             background-image: linear-gradient(to right bottom,
             rgba($color-secondary-light, .85),
             rgba($color-secondary-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-primary-light, .85),
+            rgba($color-primary-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-terciary-light, .85),
+            rgba($color-terciary-dark, .85));
         }
     }
 
