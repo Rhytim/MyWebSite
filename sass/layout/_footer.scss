@@ -15,6 +15,7 @@
     }
 
     &__navigation {
+        margin-left: 7rem;
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
@@ -54,7 +55,7 @@
     &__copyright {
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
-        width: 80%;
+        width: 69%;
         float: right;
     }
 }

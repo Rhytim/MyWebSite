@@ -431,6 +431,7 @@ body {
     width: 19rem;
     height: auto; }
   .footer__navigation {
+    margin-left: 7rem;
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
@@ -454,7 +455,7 @@ body {
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem;
-    width: 80%;
+    width: 69%;
     float: right; }
 
 .section-about {
