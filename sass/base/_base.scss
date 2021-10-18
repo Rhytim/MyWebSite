@@ -9,6 +9,7 @@
 html {
   /* defines what 1 rem is, a global definition, that's why it's not inside the typography file */
   font-size: 62.5%; /* root font-size - 10px from 16px default*/
+  scroll-behavior: smooth;
 }
 
 body {

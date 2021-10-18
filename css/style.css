@@ -9,7 +9,8 @@
 html {
   /* defines what 1 rem is, a global definition, that's why it's not inside the typography file */
   font-size: 62.5%;
-  /* root font-size - 10px from 16px default*/ }
+  /* root font-size - 10px from 16px default*/
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
@@ -255,16 +256,18 @@ body {
       background-image: linear-gradient(to right bottom, rgba(255, 183, 94, 0.85), rgba(237, 143, 3, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
-  .card__details ul {
-    list-style: none;
-    width: 30%;
-    margin: 0 auto; }
-    .card__details ul li {
-      text-align: center;
-      font-size: 1.7rem;
-      padding: 0.5rem; }
-      .card__details ul li:not(:last-child) {
-        border-bottom: 1px solid #eee; }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -323,12 +326,12 @@ body {
     transform: translateY(-1.5rem) scale(1.03); }
   .feature-box__details ul {
     list-style: none;
-    width: 30%;
+    width: 80%;
     margin: 0 auto; }
     .feature-box__details ul li {
       text-align: center;
-      font-size: 1.7rem;
-      padding: 0.5rem; }
+      font-size: 1.5rem;
+      padding: 1rem; }
       .feature-box__details ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
 
