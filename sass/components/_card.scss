@@ -116,11 +116,15 @@
         transform: translate(-50%, -50%);
         text-align: center;
 
-        &-description{
-            color: $color-white;
-            margin-bottom: 3rem;
-            font-weight: 300;
-            font-size: 2.5rem;
-        }
+        // &-description{
+        //     color: $color-white;
+        //     margin-bottom: 3rem;
+        //     font-weight: 300;
+        //     font-size: 2.5rem;
+        // }
+    }
+
+    &__btn1 {
+        margin-bottom: 3rem;    
     }
 }
