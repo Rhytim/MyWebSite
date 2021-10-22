@@ -108,7 +108,7 @@
         @include details;
     }
 
-    // FRON SIDE STYLING
+    // FRONT SIDE STYLING
     &__cta {
         position: absolute;
         top: 50%;
@@ -122,5 +122,9 @@
         //     font-weight: 300;
         //     font-size: 2.5rem;
         // }
+    }
+
+    &__cta-btn {
+        margin-top: 3rem;
     }
 }
