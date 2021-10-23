@@ -25,15 +25,16 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Know me</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Knowledge</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Projects</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Contact</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Myself</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Wisdom</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Projects</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Contact</a></li>
                 </ul>
             </nav>
         </div>
 
-        <header class="header">
+        <header class="header" id="home">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo" width="67" height="200">
             </div>     
@@ -43,7 +44,7 @@
                     <span class="heading-primary--sub">Junior Web Dev</span>
                 </h1>
 
-                <a href="#projects" class="btn btn--white btn--animated">Discover my projects</a>
+                <a href="#section-projects" class="btn btn--white btn--animated">Discover my projects</a>
             </div>
         </header>
 
@@ -52,7 +53,7 @@
             <section class="section-about" id="about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        About Me and Myself
+                        About Me & Myself
                     </h2>
                 </div>
                 <div class="row">
@@ -67,7 +68,11 @@
                         </a>
                     </div>
                     <div class="col-1-of-2">
-                        <div class="composition"><img src="img/cnpLogo.png" alt="Photo 1" class="composition__photo composition__photo--p1"><img src="img/pcLogo.png" alt="Photo 2" class="composition__photo composition__photo--p2"><img src="img/psicoLogo.png" alt="Photo 3" class="composition__photo composition__photo--p3"></div>
+                        <div class="composition">
+                            <img src="img/cnpLogo.png" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/brainfuck.png" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/psicoLogo.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -133,8 +138,9 @@
                     </div>
                 </div>
             </section>
+
             <!-- PROJECTS -->
-            <section class="section-projects" id="projects">
+            <section class="section-projects" id="section-projects">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Latest Projects
@@ -226,7 +232,7 @@
             </section>
 
             <!-- CONTACT -->
-            <section class="section-contact">
+            <section class="section-contact" id="section-contact">
                 <div class="row">
                     <div class="contact">
                         <div class="contact__form">
@@ -290,7 +296,7 @@
         <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">
-                    <img src="img/cnpLogo.png" alt="Photo" class="popup__img">
+                    <img src="img/fotoPerfil.jpg" alt="PhotoMarc" class="popup__img">
                 </div>
                 <div class="popup__right">
                     <a href="#about" class="popup__close">&times;</a>
@@ -299,7 +305,7 @@
                     <p class="popup__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptas dolorum sint dolore commodi eum officia mollitia voluptatibus assumenda ut nobis maxime hic doloremque, non dolores error sunt tempore comrt?
                     </p>
-                    <a href="#" class="btn btn--orange">Resume</a>
+                    <a href="files/CVMarc.pdf" class="btn btn--orange">Resume</a>
                 </div>
             </div>
         </div>

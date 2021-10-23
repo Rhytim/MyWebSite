@@ -232,7 +232,7 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/psicoLogo.png); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/mastermind.jpg); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, #ffb75e, #ed8f03), url(../img/card2.jpg); }
     .card__picture--3 {
@@ -288,12 +288,13 @@ body {
     transition: all .2s;
     outline-offset: 1rem; }
     .composition__photo--p1 {
-      left: 0;
+      left: 2rem;
       top: -2rem; }
     .composition__photo--p2 {
       right: 0;
       top: 2rem; }
     .composition__photo--p3 {
+      width: 45%;
       left: 20%;
       top: 10rem; }
     .composition__photo:hover {
