@@ -235,23 +235,25 @@
                 <div class="row">
                     <div class="contact">
                         <div class="contact__form">
-                            <form action="#" class="form">
+                            <form action="https://formsubmit.co/contact@marclopezmoll.com" method="POST" class="form">
                                 <div class="u-margin-bottom-medium">
                                     <h2 class="heading-secondary">
                                         get in touch
                                     </h2>
                                 </div>
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="https://www.marclopezmoll.com/#section-contact">
                                 <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <input type="text" class="form__input" placeholder="Full Name" id="name" name="name" required>
                                     <label for="name" class="form__label">Full name</label>
                                 </div>
                                 <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                    <input type="email" class="form__input" placeholder="Email Address" id="email" name="email" required>
                                     <label for="email" class="form__label">Email address</label>
                                 </div>  
                                 <div class="form__group">
-                                    ​<textarea class="form__input" rows="4" cols="30" placeholder="Message" id="txtArea" required></textarea>
-                                    <label for="txtArea" class="form__label">Message</label>
+                                    ​<textarea class="form__input" rows="4" cols="30" placeholder="Message" id="txtArea" name="textarea" required></textarea>
+                                    <label for="textarea" class="form__label">Message</label>
                                 </div>
                                 <div class="form__group">
                                     <button class="btn btn--orange btn--send">Send &rarr;</button>
