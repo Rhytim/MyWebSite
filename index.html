@@ -1,314 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon2.png">
-        
-        <title>Marc Lopez</title>
-    </head>
-    <body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-        <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon2.png" />
 
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
+    <title>Marc Lopez</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-            <div class="navigation__background">&nbsp;</div>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Myself</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Wisdom</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Projects</a></li>
-                    <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Contact</a></li>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>Myself</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02</span>Wisdom</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header" id="home">
+      <div class="header__logo-box">
+        <img
+          src="img/logo-white.png"
+          alt="Logo"
+          class="header__logo"
+          width="67"
+          height="200"
+        />
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Marc López</span>
+          <span class="heading-primary--sub">Junior Web Dev</span>
+        </h1>
+
+        <a href="#section-projects" class="btn btn--white btn--animated"
+          >Descubre proyectos</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT ME -->
+      <section class="section-about" id="about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Hola, soy Marc.</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-terciary u-margin-bottom-small">
+              Primeras Impresiones 😳
+            </h3>
+            <p class="paragraph">
+              Llevo metido casi 7 años en el círculo de los inquietos y curiosos
+              al mundo online.
+            </p>
+            <p class="paragraph">
+              En este tiempo he aprendido y desaprendido. He fracasado para
+              volverme a levantar. He entrado y salido de proyectos propios.
+            </p>
+            <p class="paragraph">
+              El caso es que casi nadie te explica nada sobre todo eso y quizá,
+              ese sea el motivo por el cual estés en mi página web?
+            </p>
+            <p class="paragraph">
+              Aquí abajo? Encontrarás algunas cosas más sobre mi...
+            </p>
+            <a href="#popup" class="btn-text">Más &rarr; </a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/cnpLogo.png"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              />
+              <img
+                src="img/brainfuck.png"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                src="img/psicoLogo.jpg"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- POPUP -->
+      <div class="popup" id="popup">
+        <div class="popup__content">
+          <div class="popup__left">
+            <img src="img/fotoPerfil.jpg" alt="PhotoMarc" class="popup__img" />
+          </div>
+          <div class="popup__right">
+            <a href="#about" class="popup__close">&times;</a>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Conociéndome
+            </h2>
+            <h3 class="heading-terciary u-margin-bottom-small">
+              Por el momento... 10 cosas sobre mí.
+            </h3>
+            <p class="popup__text">
+              1 &dash; Menorquín de nacimiento y vivo actualmente en la capital.
+              <br />
+              2 &dash; Desde pequeño me xiflan los castillos, su historia y su
+              arte me fascinan! <br />
+              3 &dash; Hablo mucho en inglés, castellano y catalán, e un poco de
+              francés muy oxidado. <br />
+              4 &dash; Me encanta hacer presupuestos de hardware para ayudar a
+              personas a que les vaya cúal guante sin gastar de más. <br />
+              5 &dash; En mi día a dia, centro mi atención en obtener
+              conocimientos de programación web, dedico tiempo a las novedades
+              en hardware a nivel mundial. <br />
+              6 &dash; Suelo ser muy directo y excesivamente sincero. A veces
+              digo cosas que caen como un jarrón de agua fría. Nunca lo hago
+              para joder y siempre viene acompañado de una profunda reflexión.
+              <br />
+              7 &dash; Si me preguntas ¿te contacto por teléfono o email? La
+              respuesta, casi siempre, será: email. <br />
+              8 &dash; Cuando no trabajo soy ciclista aficionado además de un
+              consumidor compulsivo de libros de psicologia y series. <br />
+              9 &dash; Trabajo con hardware Apple + software Google. <br />
+              10 &dash; En mi niñez me desvelaba a las 5 de la mañana para ver
+              séries de policia y héroes, y desde entonces hoy sigo con clara
+              determinación ser Policia Nacional e entrar en el grupo de la
+              Brigada Informática.
+            </p>
+            <a href="files/CVMarc.pdf" class="btn btn--orange">Resume</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- KNOWLEDGE -->
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-webpage-multiple"></i>
+              <h3 class="heading-terciary u-margin-bottom-small">Front End</h3>
+              <div class="feature-box__details">
+                <ul>
+                  <li>Pug</li>
+                  <li>JavaScript</li>
+                  <li>CSS3|SASS</li>
+                  <li>WordPress</li>
                 </ul>
-            </nav>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-share"></i>
+              <h3 class="heading-terciary u-margin-bottom-small">Servidor</h3>
+              <div class="feature-box__details">
+                <ul>
+                  <li>Java</li>
+                  <li>PHP</li>
+                  <li>NodeJS</li>
+                  <li>Express</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-server2"></i>
+              <h3 class="heading-terciary u-margin-bottom-small">
+                Base de Datos
+              </h3>
+              <div class="feature-box__details">
+                <ul>
+                  <li>NoSQL</li>
+                  <li>mySQL</li>
+                  <li>Firebase</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-gear"></i>
+              <h3 class="heading-terciary u-margin-bottom-small">Edición</h3>
+              <div class="feature-box__details">
+                <ul>
+                  <li>Audacity</li>
+                  <li>Photoshop</li>
+                  <li>AfterEffects</li>
+                  <li>PremierePro</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <header class="header" id="home">
-            <div class="header__logo-box">
-                <img src="img/logo-white.png" alt="Logo" class="header__logo" width="67" height="200">
-            </div>     
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Marc López</span>
-                    <span class="heading-primary--sub">Junior Web Dev</span>
-                </h1>
-
-                <a href="#section-projects" class="btn btn--white btn--animated">Discover my projects</a>
-            </div>
-        </header>
-
-        <main>
-            <!-- ABOUT ME -->
-            <section class="section-about" id="about">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        About Me & Myself
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-terciary u-margin-bottom-small">You're going to fall in love with me</h3>
-                       <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusantium. Molestias explicabo facilis porro commodi optio! Qui aut consequuntur iure, repellendus est pariatur doloremque, aliquam cupiditate eos, vel accusantium magnam.</p>
-                        <h3 class="heading-terciary u-margin-bottom-small">Just a title</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusantium. Molestias explicabo facilis porro commodi optio!
-                        </p>
-                        <a href="#popup" class="btn-text">
-                            Know more &rarr;
-                        </a>
-                    </div>
-                    <div class="col-1-of-2">
-                        <div class="composition">
-                            <img src="img/cnpLogo.png" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/brainfuck.png" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/psicoLogo.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- KNOWLEDGE -->
-            <section class="section-features">
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-webpage-multiple"></i>
-                            <h3 class="heading-terciary u-margin-bottom-small">Front End</h3>
-                            <div class="feature-box__details">
-                                <ul>
-                                    <li>Pug</li>
-                                    <li>JavaScript</li>
-                                    <li>CSS3|SASS</li>
-                                    <li>WordPress</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-share"></i>
-                            <h3 class="heading-terciary u-margin-bottom-small">Server</h3>
-                            <div class="feature-box__details">
-                                <ul>
-                                    <li>Java</li>
-                                    <li>PHP</li>
-                                    <li>NodeJS</li>
-                                    <li>Express</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-server2"></i>
-                            <h3 class="heading-terciary u-margin-bottom-small">Database</h3>
-                            <div class="feature-box__details">
-                                <ul>
-                                    <li>NoSQL</li>
-                                    <li>mySQL</li>
-                                    <li>Firebase</li>
-                                    <li>MongoDB</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon icon-basic-gear"></i>
-                            <h3 class="heading-terciary u-margin-bottom-small">Edition</h3>
-                            <div class="feature-box__details">
-                                <ul>
-                                    <li>Audacity</li>
-                                    <li>Photoshop</li>
-                                    <li>AfterEffects</li>
-                                    <li>PremierePro</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- PROJECTS -->
-            <section class="section-projects" id="section-projects">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Latest Projects
-                    </h2>
-                </div>
-                <div class="row">
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--1">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--1">
-                                        The MasterMind
-                                    </span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>Java</li>
-                                        <li>MySQL</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-1">
-                                <div class="card__cta">
-                                    <a href="https://github.com/Rhytim/Mastermind" target="_blank" class="btn btn--white">repo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">
-                                        The RollDice
-                                    </span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>Git</li>
-                                        <li>CSS</li>
-                                        <li>HTML</li>
-                                        <li>JavaScript</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                                <div class="card__cta">
-                                    <a href="https://github.com/Rhytim/RollDice" target="_blank" class="btn btn--white">repo</a>
-                                    <a href="http://rolldice.marclopezmoll.com" target="_blank" class="card__cta-btn btn btn--white">demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--3">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--3">
-                                        The AdivinaMe
-                                    </span>
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>Git</li>
-                                        <li>CSS</li>
-                                        <li>HTML</li>
-                                        <li>JavaScript</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card__side card__side--back card__side--back-3">
-                                <div class="card__cta">
-                                    <a href="https://github.com/Rhytim/AdivinaMe" target="_blank" class="btn btn--white">repo</a>
-                                    <a href="http://adiviname.marclopezmoll.com" target="_blank" class="card__cta-btn btn btn--white">demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CONTACT -->
-            <section class="section-contact" id="section-contact">
-                <div class="row">
-                    <div class="contact">
-                        <div class="contact__form">
-                            <form action="https://formsubmit.co/contact@marclopezmoll.com" method="POST" class="form">
-                                <div class="u-margin-bottom-medium">
-                                    <h2 class="heading-secondary">
-                                        get in touch
-                                    </h2>
-                                </div>
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_next" value="https://www.marclopezmoll.com/#section-contact">
-                                <div class="form__group">
-                                    <input type="text" class="form__input" placeholder="Full Name" id="name" name="name" required>
-                                    <label for="name" class="form__label">Full name</label>
-                                </div>
-                                <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Email Address" id="email" name="email" required>
-                                    <label for="email" class="form__label">Email address</label>
-                                </div>  
-                                <div class="form__group">
-                                    ​<textarea class="form__input" rows="4" cols="30" placeholder="Message" id="txtArea" name="textarea" required></textarea>
-                                    <label for="textarea" class="form__label">Message</label>
-                                </div>
-                                <div class="form__group">
-                                    <button class="btn btn--orange btn--send">Send &rarr;</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="https://github.com/Rhytim" target="_blank" class="footer__link">
-                                <img class="footer__icon" src="img/github.png" alt="Github">
-                            </a></li>
-                            <li class="footer__item"><a href="https://www.linkedin.com/in/maaarclpz/" target="_blank" class="footer__link">
-                                <img class="footer__icon" src="img/linkedin.png" alt="LinkedIn">
-                            </a></li>
-                            <li class="footer__item"><a href="files/CVMarc.pdf" target="_blank" class="footer__link">
-                                <img class="footer__icon" src="img/cv.png" alt="Resume CV">
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-1-of-3 footer__logo-box">
-                    <img src="img/logo-white.png" alt="Full Logo" class="footer__logo">
-                </div>
-                <div class="col-1-of-3">
-                    <p class="footer__copyright">&copy; by <a href="#" class="footer__link">Marc López</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-
-        <!-- POPUP -->
-        <div class="popup" id="popup">
-            <div class="popup__content">
-                <div class="popup__left">
-                    <img src="img/fotoPerfil.jpg" alt="PhotoMarc" class="popup__img">
-                </div>
-                <div class="popup__right">
-                    <a href="#about" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-small">Knowing Me</h2>
-                    <h3 class="heading-terciary u-margin-bottom-small">Important &ndash; Please read these before knwoing</h3>
-                    <p class="popup__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, voluptas dolorum sint dolore commodi eum officia mollitia voluptatibus assumenda ut nobis maxime hic doloremque, non dolores error sunt tempore comrt?
-                    </p>
-                    <a href="files/CVMarc.pdf" class="btn btn--orange">Resume</a>
-                </div>
-            </div>
+      <!-- PROJECTS -->
+      <section class="section-projects" id="section-projects">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Últimos Proyectos</h2>
         </div>
-    </body>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    The MasterMind
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Java</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <a
+                    href="https://github.com/Rhytim/Mastermind"
+                    target="_blank"
+                    class="btn btn--white"
+                    >repo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    The RollDice
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Git</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <a
+                    href="https://github.com/Rhytim/RollDice"
+                    target="_blank"
+                    class="btn btn--white"
+                    >repo</a
+                  >
+                  <a
+                    href="http://rolldice.marclopezmoll.com"
+                    target="_blank"
+                    class="card__cta-btn btn btn--white"
+                    >demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    The AdivinaMe
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Git</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <a
+                    href="https://github.com/Rhytim/AdivinaMe"
+                    target="_blank"
+                    class="btn btn--white"
+                    >repo</a
+                  >
+                  <a
+                    href="http://adiviname.marclopezmoll.com"
+                    target="_blank"
+                    class="card__cta-btn btn btn--white"
+                    >demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section-contact" id="section-contact">
+        <div class="row">
+          <div class="contact">
+            <div class="contact__form">
+              <form
+                action="https://formsubmit.co/contact@marclopezmoll.com"
+                method="POST"
+                class="form"
+              >
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Escríbeme</h2>
+                </div>
+                <input type="hidden" name="_captcha" value="false" />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://www.marclopezmoll.com/#section-contact"
+                />
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Nombre Apellidos"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Nombre Apellidos</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Correo Electrónico"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                  <label for="email" class="form__label"
+                    >Correo Electrónico</label
+                  >
+                </div>
+                <div class="form__group">
+                  ​<textarea
+                    class="form__input"
+                    rows="4"
+                    cols="30"
+                    placeholder="Mensaje"
+                    id="txtArea"
+                    name="textarea"
+                    required
+                  ></textarea>
+                  <label for="textarea" class="form__label">Mensaje</label>
+                </div>
+                <div class="form__group">
+                  <button class="btn btn--orange btn--send">
+                    Enviar &rarr;
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  href="https://github.com/Rhytim"
+                  target="_blank"
+                  class="footer__link"
+                >
+                  <img class="footer__icon" src="img/github.png" alt="Github" />
+                </a>
+              </li>
+              <li class="footer__item">
+                <a
+                  href="https://www.linkedin.com/in/maaarclpz/"
+                  target="_blank"
+                  class="footer__link"
+                >
+                  <img
+                    class="footer__icon"
+                    src="img/linkedin.png"
+                    alt="LinkedIn"
+                  />
+                </a>
+              </li>
+              <li class="footer__item">
+                <a href="files/CVMarc.pdf" target="_blank" class="footer__link">
+                  <img class="footer__icon" src="img/cv.png" alt="Resume CV" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-3 footer__logo-box">
+          <img src="img/logo-white.png" alt="Full Logo" class="footer__logo" />
+        </div>
+        <div class="col-1-of-3">
+          <p class="footer__copyright">
+            &copy; por <a href="#" class="footer__link">Marc López</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
